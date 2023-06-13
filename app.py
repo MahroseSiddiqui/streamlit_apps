@@ -25,11 +25,6 @@ with data_sets:
     st.subheader("TIP: Import dataset from seaborn library")
     # import dataset
     df = sns.load_dataset("titanic")
-    # Display the Age Distribution using a histogram
-st.header("Age Distribution")
-plt.figure(figsize=(8, 6))
-sns.histplot(data=df, x='age', bins=10, kde=True)
-st.pyplot(plt)
 
 with features:
     st.header("These are our apps features")
